@@ -1,17 +1,18 @@
 import React from 'react';
 import './App.css';
-import {Header} from "./components/Header/Header";
-import {Main} from "./components/Main/Main";
-import {Footer} from "./components/Footer/Footer";
+
+import {MainPage} from "./components/main-page/MainPage";
+import {Header} from "./components/header/Header";
+import {Footer} from "./components/footer/Footer";
 
 export function App() {
-  return (
-    <div className="App">
-     <Header/>
-      <Main/>
-      <Footer/>
-    </div>
-  );
+    return (
+        <div className="App">
+            <Header/>
+            <MainPage/>
+            <Footer/>
+        </div>
+    );
 }
 
 

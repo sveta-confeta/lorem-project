@@ -1,17 +1,18 @@
 .footer {
-    position: fixed;
-    bottom:0;
-    left:0;
-    right: 0;
+    /*position: fixed;*/
+    /*bottom:0;*/
+    /*left:0;*/
+    /*right: 0;*/
     padding-bottom: 52px;
+    position: relative;
 }
-
 .footerPosition{
     margin: 0 auto;
     width: 1230px;
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
+    display: flex;
+   justify-content: space-between;
     column-gap: 166px;
+
 
 }
 
@@ -28,6 +29,12 @@
     font-size: 11px;
     line-height: 18px;
     letter-spacing: 0.03em;
+}
+.cardsSection{
+    max-width: 314px;
+}
+.loremSection{
+    max-width: 335px;
 }
 
 .address li:not(:last-child) {

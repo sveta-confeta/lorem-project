@@ -1,0 +1,51 @@
+.main{
+    min-height: calc(689px - 91px);
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 54px;
+}
+
+ .content{
+     display: flex;
+     flex-direction: column;
+     justify-content: center;
+     align-items: flex-start;
+ }
+.titleMain{
+    font-family: 'CAT Linz';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 75px;
+    line-height: 71px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+}
+.textMain{
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 26px;
+    letter-spacing: 0.03em;
+    text-transform: uppercase;
+    margin-bottom: 27px;
+}
+.btnMain{
+    background: #FF9110;
+    border: 1px solid #FF9110;
+    border-radius: 93px;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-transform: uppercase;
+    color: #2B2B2D;
+    padding: 16px 88px;
+    margin-left: 40px;
+    cursor: pointer;
+
+}
+.imgContainer{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    margin-right: -30px;
+}

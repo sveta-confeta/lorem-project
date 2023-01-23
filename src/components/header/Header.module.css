@@ -3,6 +3,8 @@
     display: flex;
     justify-content: space-between;
     align-items: center;
+    max-width: 1230px;
+    margin:0 auto;
 }
 .logo{
     font-family: 'CAT Linz';
