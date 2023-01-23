@@ -1,12 +1,23 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Mulish:wght@300;400;500;600;700&family=PT+Sans+Caption&display=swap');
 
+
+@font-face {
+  font-family: 'CAT Linz';
+  src: url('./fonts/CATLinz.woff2') format('woff2'),
+  url('./fonts/CATLinz.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
 body {
   margin: 0;
   font-family: 'Mulish', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   background-color: #161616;
+  color: white;
 }
 
 code {
