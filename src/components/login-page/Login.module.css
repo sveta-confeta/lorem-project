@@ -1,0 +1,67 @@
+.login {
+    min-height: 100vh;
+    background-image: url("./../../assets/backgroundLog.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+}
+
+.formContainer {
+    width: 600px;
+    position: fixed;
+    top: 50%;
+    left: 65%;
+    -webkit-transform: translate(-50%, -50%);
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+}
+
+.input {
+    width: 100%;
+    background: #242424;
+    border: 1px solid #3D3D3D;
+    border-radius: 75px;
+    height: 43px;
+    padding: 12px 20px;
+}
+
+.top {
+    margin-bottom: 15px;
+}
+
+.bottom {
+    margin-bottom: 54px;
+}
+
+.input::placeholder {
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #7F7F7F;
+
+}
+
+.titleLog {
+    font-family: 'CAT Linz';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #F9F4F1;
+    margin-bottom: 25px;
+}
+.btnLogin{
+    background-color: #FF9110;
+    border: none;
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 20px;
+    color: #2B2B2D;
+    padding: 10px 50px;
+    border-radius: 75px;
+}
