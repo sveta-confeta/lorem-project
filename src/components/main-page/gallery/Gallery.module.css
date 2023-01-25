@@ -1,0 +1,24 @@
+.gallery{
+    padding-top: 54px;
+    padding-bottom: 276px;
+    max-width: 1230px;
+    margin: 0 auto;
+}
+.title{
+    font-family: 'CAT Linz';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    margin-bottom: 28px;
+}
+.cardsWrapper{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+.card{
+    border-radius: 15px;
+}

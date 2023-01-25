@@ -1,17 +1,18 @@
-.main{
+.main {
     min-height: calc(689px - 91px);
     display: flex;
     justify-content: space-between;
     margin-bottom: 54px;
 }
 
- .content{
-     display: flex;
-     flex-direction: column;
-     justify-content: center;
-     align-items: flex-start;
- }
-.titleMain{
+.content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.titleMain {
     font-family: 'CAT Linz';
     font-style: normal;
     font-weight: 400;
@@ -21,7 +22,8 @@
     text-transform: uppercase;
     margin-bottom: 20px;
 }
-.textMain{
+
+.textMain {
     font-weight: 400;
     font-size: 12px;
     line-height: 26px;
@@ -29,7 +31,8 @@
     text-transform: uppercase;
     margin-bottom: 27px;
 }
-.btnMain{
+
+.btnMain {
     background: #FF9110;
     border: 1px solid #FF9110;
     border-radius: 93px;
@@ -43,7 +46,8 @@
     cursor: pointer;
 
 }
-.imgContainer{
+
+.imgContainer {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;

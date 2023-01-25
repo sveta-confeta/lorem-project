@@ -5,6 +5,7 @@ import {App} from './App';
 import reportWebVitals from './reportWebVitals';
 import {LoginPage} from "./components/login-page/LoginPage";
 import {HashRouter, Routes, Route} from "react-router-dom";
+import {Card} from "./components/main-page/gallery/card/Card";
 
 const root = ReactDOM.createRoot(
     document.getElementById('root') as HTMLElement
@@ -14,6 +15,7 @@ root.render(
         <HashRouter>
             <Routes>
                 <Route path='/' element={<App/>}/>
+                <Route path='/:id' element={<Card/>}/>
                 <Route path='/login' element={<LoginPage/>}/>
                 <Route path='*' element={<h1>404 page not found</h1>}/>
             </Routes>

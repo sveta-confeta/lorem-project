@@ -1,0 +1,68 @@
+
+.cardWrapper {
+    display: flex;
+    gap: 31px;
+    justify-content: space-between;
+    align-items: flex-start;
+    position: fixed;
+    top: 42%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
+}
+
+.imgCard {
+    width: 827px;
+    height: 525px;
+    border-radius: 16px;
+}
+
+.details {
+    padding: 30px 42px 30px 19px;
+    background: #2B2B2D;
+    border-radius: 16px;
+
+}
+
+.detailsTitle {
+    font-family: 'CAT Linz';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 29px;
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+    color: #F9F4F1;
+    margin-bottom: 16px;
+}
+
+.infoPicture {
+    display: flex;
+    gap: 50px;
+}
+
+.infoPicture li {
+    max-width: 90px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.infoPicture span {
+    font-weight: 400;
+    font-size: 12px;
+    line-height: 15px;
+    color: #FF9110;
+    background: rgba(255, 145, 16, 0.1);
+    border-radius: 100px;
+    padding: 4px 15px;
+    margin-bottom: 18px;
+}
+
+.infoPicture p {
+    font-weight: 400;
+    font-size: 15px;
+    line-height: 19px;
+    color: #F9F4F1;
+    text-align: center;
+}

@@ -1,10 +1,8 @@
 import {
     createContext,
     DetailedHTMLProps,
-    Dispatch,
     FC, HTMLAttributes,
-    PropsWithChildren,
-    SetStateAction,
+
     useEffect,
     useState
 } from "react";
@@ -19,21 +17,15 @@ export type PhotosType = {
     download_url: string
 
 }
-
 type ContextType={
     data?:PhotosType[]
 }
-
-
-
 export const APIContext = createContext<ContextType>({data:[]});
-
-
 
 export const GetApiProvaider: FC<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>> =({children})=>{
     const [data, setData] = useState<PhotosType[]>([]);
     useEffect(() => {
-        let url = "https://picsum.photos/v2/list?page=2&limit=100";
+        let url = "https://picsum.photos/v2/list?page=1&limit=12";
         axios.get(url)
             .then(function (response) {
                 setData(response.data);
