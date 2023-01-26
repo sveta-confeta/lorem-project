@@ -4,8 +4,8 @@
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
-    display: flex;
-    align-items: center;
+
+
 }
 
 .formContainer {
@@ -13,8 +13,6 @@
     position: fixed;
     top: 50%;
     left: 65%;
-    -webkit-transform: translate(-50%, -50%);
-    -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
 }
 
@@ -54,14 +52,85 @@
     text-transform: uppercase;
     color: #F9F4F1;
     margin-bottom: 25px;
+    transition: 0.5s;
 }
-.btnLogin{
+
+.btnLogin {
     background-color: #FF9110;
     border: none;
-    font-weight: 500;
+    font-weight: 600;
     font-size: 14px;
     line-height: 20px;
     color: #2B2B2D;
     padding: 10px 50px;
     border-radius: 75px;
+    text-transform: uppercase;
+}
+
+@media (max-width: 1115px) {
+    .formContainer {
+        transform: translate(-63%, -50%);
+        transition: 0.5s;
+    }
+
+}
+
+@media (max-width: 759px) {
+
+    .formContainer {
+        width: 500px;
+        transform: translate(-67%, -50%);
+        transition: 0.5s;
+    }
+
+}
+
+@media (max-width: 576px) {
+    .login{
+        padding-top: 141px;
+    }
+
+    .formContainer {
+        left: 50%;
+        transform: translateX(-50%);
+        width: 325px;
+        position: relative;
+
+    }
+    .titleLog {
+        text-align: center;
+        margin-bottom: 60px;
+    }
+
+    .input::placeholder {
+        font-size: 16px;
+        line-height: 20px;
+
+    }
+
+    .input {
+        height: 45px;
+        padding: 12px 30px;
+    }
+
+
+
+    .form{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 430px;
+    }
+
+    .btnLogin {
+        width: 100%;
+        font-size: 16px;
+        line-height: 20px;
+        padding: 16px 0;
+        border-radius: 93px;
+        flex-grow: 2;
+
+
+
+    }
 }

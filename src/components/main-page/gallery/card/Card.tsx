@@ -22,7 +22,7 @@ export const Card = () => {
 
     }, [])
     return (
-        <>
+        <div className={s.cardPosition}>
             <Header/>
             <section className={s.cardWrapper}>
                 <img src={card?.download_url} alt={`painting by the artist ${card?.author}`} className={s.imgCard}/>
@@ -30,7 +30,7 @@ export const Card = () => {
                 <div className={s.details}>
                     <h4 className={s.detailsTitle}>Details</h4>
                     <ul className={s.infoPicture}>
-                        <li> <span>Resolution</span> <p>{`${card?.width} X${card?.height} `}</p></li>
+                        <li> <span>Resolution</span> <p>{`${card?.width} x ${card?.height} `}</p></li>
                         <li> <span>Author </span><p>{card?.author}</p></li>
                         <li><span>ID</span> <p>{card?.id}</p></li>
 
@@ -38,7 +38,7 @@ export const Card = () => {
                 </div>
             </section>
             <Footer/>
-        </>
+        </div>
     );
 };
 
