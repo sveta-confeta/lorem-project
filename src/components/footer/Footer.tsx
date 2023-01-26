@@ -13,12 +13,13 @@ export const Footer = () => {
                         tempor incididunt ut labore et dolore magna aliqua. Faucibus nisl tincidunt eget nullam non nisi
                         est
                         sit amet.</p>
-                    <div className={s.cardsWrapper}>
-                        <img src={visa} alt={'card visa'}/>
-                        <img src={master} alt={'card master card'}/>
-                        <img src={master} alt={'card master card'}/>
-                    </div>
                 </div>
+                <div className={s.cardsWrapper}>
+                    <img src={visa} alt={'card visa'}/>
+                    <img src={master} alt={'card master card'}/>
+                    <img src={master} alt={'card master card'}/>
+                </div>
+
                 <div className={s.loremSection}>
                     <h4 className={s.title}>Lorem Ipsum</h4>
                     <p className={s.text}>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor

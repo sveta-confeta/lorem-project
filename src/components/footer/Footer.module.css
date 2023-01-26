@@ -3,15 +3,19 @@
     bottom: 0;
     left: 0;
     right: 0;
-    padding-bottom: 52px;
+    padding-bottom: 58px;
 }
 
 .footerPosition {
     margin: 0 auto;
-    width: 1230px;
-    display: flex;
+    max-width: 1230px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: 100px 62px;
+    grid-template-areas:
+      'cardInfo lorem cont'
+       'icon lorem cont';
     justify-content: space-between;
-    column-gap: 166px;
 
 
 }
@@ -33,10 +37,13 @@
 
 .cardsSection {
     max-width: 314px;
+    grid-area: cardInfo;
 }
 
 .loremSection {
     max-width: 335px;
+    grid-area: lorem;
+    justify-self: end;
 }
 
 .address li:not(:last-child) {
@@ -44,9 +51,15 @@
 }
 
 .cardsWrapper {
-    margin-top: 25px;
     display: flex;
     column-gap: 20px;
+    grid-area: icon;
+    margin-top: 25px;
+}
+
+.contactsSection {
+    grid-area: cont;
+    justify-self: end;
 }
 
 .subFooter {
@@ -54,13 +67,13 @@
     bottom: 0;
     left: 0;
     background-color: #000000;
-    width: 100%;
     height: 32px;
+    width: 100%;
 }
 
 .subFooterPosition {
     margin: 0 auto;
-    width: 1230px;
+    max-width: 1230px;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -74,5 +87,94 @@
     line-height: 11px;
     color: #F9F4F1;
 }
+
+@media (max-width: 1235px) {
+    .footer {
+        padding: 0 30px 52px 30px;
+    }
+
+    .subFooterPosition {
+        padding: 0 30px;
+    }
+}
+
+@media (max-width: 1112px) {
+    .footerPosition {
+        column-gap: 20px;
+    }
+}
+
+@media (max-width: 834px) {
+    .footerPosition {
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: 100px 110px  62px;
+        grid-template-areas:
+      'cardInfo cont'
+      'lorem  cont'
+      'icon  cont';
+        row-gap: 30px;
+    }
+
+
+    .loremSection {
+        justify-self: start;
+    }
+}
+
+@media (max-width: 636px) {
+    .footer{
+        padding-bottom: 70px;
+    }
+    .subFooter{
+        height: 40px;
+    }
+    .subFooterPosition{
+        height: 40px;
+    }
+    .footerPosition {
+        grid-template-columns:  1fr;
+        grid-template-rows: 110px 150px 182px 50px;
+        grid-template-areas:
+      'cardInfo'
+      'lorem '
+      'cont'
+      'icon';
+        row-gap: 30px;
+    }
+    .cardsWrapper{
+        margin-top: 0;
+    }
+
+    .contactsSection {
+        justify-self: start;
+    }
+    .title {
+        font-weight: 700;
+        font-size: 16px;
+        line-height: 20px;
+        color: #F9F4F1;
+    }
+
+    .text, .address {
+        font-weight: 500;
+        font-size: 12px;
+        line-height: 20px;
+        color: #E5E0DD;
+    }
+}
+
+@media (max-width: 415px) {
+    .footer {
+        padding: 0 16px 70px 16px;
+    }
+
+    .subFooterPosition {
+        padding: 0 16px;
+    }
+}
+
+
+
+
 
 

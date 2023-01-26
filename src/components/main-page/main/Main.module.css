@@ -1,4 +1,5 @@
 .main {
+    padding-top: 91px;
     min-height: calc(689px - 91px);
     display: flex;
     justify-content: space-between;
@@ -10,6 +11,7 @@
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
+
 }
 
 .titleMain {
@@ -30,6 +32,7 @@
     letter-spacing: 0.03em;
     text-transform: uppercase;
     margin-bottom: 27px;
+    color: #F9F4F1;
 }
 
 .btnMain {
@@ -38,7 +41,6 @@
     border-radius: 93px;
     font-weight: 600;
     font-size: 16px;
-    line-height: 20px;
     text-transform: uppercase;
     color: #2B2B2D;
     padding: 16px 88px;
@@ -47,9 +49,112 @@
 
 }
 
-.imgContainer {
+.mainImg {
     display: flex;
     flex-direction: column;
     justify-content: flex-start;
     margin-right: -30px;
+
+}
+
+@media (max-width: 1336px) {
+    .mainImg {
+        width: 500px;
+        height: auto;
+        margin-right: 0;
+    }
+
+    .content {
+        max-width: 500px;
+    }
+}
+
+@media (max-width: 1235px) {
+    .main {
+        padding: 91px 30px 0 30px;
+        min-height: auto;
+    }
+}
+
+@media (max-width: 1000px) {
+    .titleMain {
+        font-size: 55px;
+        line-height: 51px;
+    }
+
+    .btnMain {
+        margin-left: 0;
+    }
+
+    .mainImg {
+        width: 400px;
+
+    }
+}
+
+
+@media (max-width: 800px) {
+    .mainImg {
+        width: 338px;
+    }
+
+    .titleMain {
+        font-size: 45px;
+        line-height: 41px;
+    }
+
+    .btnMain {
+        padding: 15px 55px;
+    }
+}
+
+@media (max-width: 670px) {
+    .main {
+        flex-direction: column;
+        align-items: center;
+        margin-bottom: 20px;
+    }
+
+    .content {
+        align-items: center;
+        max-width: 100%;
+        order: 2;
+    }
+
+    .textMain {
+        margin-bottom: 40px;
+        font-size: 14px;
+        line-height: 22px;
+        align-self: flex-start;
+
+
+    }
+
+    .mainImg {
+        order: 1;
+    }
+
+    .btnMain {
+        margin-bottom: 40px;
+        padding: 16px 105px;
+
+    }
+}
+@media (max-width: 576px) {
+    .main {
+        padding-top: 61px;
+        min-height: calc(689px - 61px);
+    }
+    .titleMain {
+        font-size: 42px;
+        line-height: 43px;
+        color: #F9F4F1;
+        text-align: left;
+    }
+
+}
+@media (max-width: 415px) {
+    .main {
+        padding: 61px 16px 0 16px;
+    }
 }

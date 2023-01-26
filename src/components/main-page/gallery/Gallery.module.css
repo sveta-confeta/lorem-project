@@ -13,6 +13,8 @@
     letter-spacing: 0.02em;
     text-transform: uppercase;
     margin-bottom: 28px;
+    color: #F9F4F1;
+
 }
 .cardsWrapper{
     display: flex;
@@ -21,4 +23,74 @@
 }
 .card{
     border-radius: 15px;
+    transition: 0.5s;
+}
+@media(max-width: 1235px){
+    .cardsWrapper{
+       justify-content: space-between;
+    }
+    .gallery{
+        padding:54px  30px 276px 30px;
+    }
+}
+@media(max-width: 1000px){
+    .gallery{
+        padding:20px 30px 276px 30px;
+    }
+    .card{
+        width:400px;
+        height: auto;
+        transition: 0.5s;
+    }
+}
+@media(max-width: 900px){
+    .card{
+        width:350px;
+    }
+}
+@media (max-width: 834px){
+    .gallery{
+        padding:20px 30px 406px 30px;
+    }
+}
+@media(max-width: 800px){
+    .card{
+        width:290px;
+    }
+    .gallery{
+        padding:0 30px 432px 30px;
+    }
+}
+
+@media(max-width: 680px){
+    .card{
+        width:250px;
+    }
+    .gallery{
+        padding:0 30px 412px 30px;
+    }
+}
+@media(max-width: 636px){
+    .gallery{
+        padding:0 30px 676px 30px;
+    }
+}
+@media(max-width: 600px){
+    .card{
+        width:154px;
+
+    }
+    .cardsWrapper{
+        justify-content: center;
+    }
+   .title{
+       font-size: 24px;
+       line-height: 23px;
+       margin-bottom: 19px;
+   }
+}
+@media (max-width: 415px) {
+    .gallery{
+        padding:0 16px 676px 16px;
+    }
 }

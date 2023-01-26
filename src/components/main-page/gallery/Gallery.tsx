@@ -9,7 +9,7 @@ export const Gallery = () => {
 
 
     return (
-        <section className={s.gallery}>
+        <section id="gallery" className={s.gallery}>
             <h3 className={s.title}>All images</h3>
             <div className={s.cardsWrapper}>
                 {data?.map(m => {

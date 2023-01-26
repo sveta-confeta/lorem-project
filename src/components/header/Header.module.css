@@ -1,36 +1,85 @@
-.header{
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
     height: 91px;
+    box-shadow:70px 70px 90px  rgba(22, 22, 22, 1) inset;
+    width: 100%;
+
+}
+
+.headerPosition {
     display: flex;
     justify-content: space-between;
     align-items: center;
     max-width: 1230px;
-    margin:0 auto;
+    margin: 0 auto;
 }
-.logo{
+
+.logo {
     font-family: 'CAT Linz';
     font-style: normal;
     font-weight: 400;
     font-size: 30px;
     line-height: 90px;
     letter-spacing: 0.225em;
+    cursor: pointer;
 }
+
 .authWrapper {
     display: flex;
     align-items: center;
 
 }
-.userName{
+
+.userName {
     font-style: normal;
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     text-transform: uppercase;
 }
-.logout{
+
+.logout {
     font-weight: 400;
     font-size: 16px;
     line-height: 26px;
     color: #FF9110;
     text-decoration: none;
     margin-left: 30px;
+}
+@media(max-width: 1235px){
+    .headerPosition{
+        padding: 0 30px;
+    }
+}
+@media (max-width: 576px) {
+    .logo{
+        font-size: 28px;
+        line-height: 130%;
+        letter-spacing: 0.12em;
+    }
+    .header{
+        height: 61px;
+
+    }
+    .headerPosition{
+        align-items: center;
+        height: 61px;
+    }
+    .userName {
+        font-size: 12px;
+        line-height: 130%;
+        margin-right: 10px;
+    }
+    .logIcon:hover{
+        transform: scale(1.2);
+        cursor: pointer;
+    }
+
+}
+@media (max-width: 415px) {
+    .headerPosition{
+        padding: 0 16px;
+    }
 }
