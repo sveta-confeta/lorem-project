@@ -11,8 +11,8 @@ export const Gallery = () => {
             <div className={s.cardsWrapper}>
                 {data?.map(m => {
                     return (
-                       <NavLink to={`/${m.id}`}>
-                            <img key={m.id } src={m.download_url} width={290} height={234} className={s.card}/>
+                       <NavLink key={m.id } to={`/${m.id}`}>
+                            <img  src={m.download_url} width={290} height={234} className={s.card}/>
                        </NavLink>
                     )
                 })}

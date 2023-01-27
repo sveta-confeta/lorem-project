@@ -34,7 +34,7 @@ function LoginForm() {
 				className={`${s.input} ${s.bottom}`}
 				onFocus={onFocus}
 			/>
-				{errorMessage || <div className={s.errorMessage}>{errorMessage}</div>}
+				{errorMessage && <div className={s.errorMessage}>{errorMessage}</div>}
 			</div>
 			<button className={s.btnLogin} type="submit" disabled={!isCredentialsValid}>Continue</button>
 

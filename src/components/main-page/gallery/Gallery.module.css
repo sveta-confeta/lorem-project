@@ -24,6 +24,7 @@
 .card{
     border-radius: 15px;
     transition: 0.5s;
+    object-fit: cover;
 }
 @media(max-width: 1235px){
     .cardsWrapper{
@@ -39,7 +40,7 @@
     }
     .card{
         width:400px;
-        height: auto;
+        height: 263px;
         transition: 0.5s;
     }
 }
@@ -65,6 +66,7 @@
 @media(max-width: 680px){
     .card{
         width:250px;
+        height: 220px;
     }
     .gallery{
         padding:0 30px 412px 30px;
@@ -78,6 +80,7 @@
 @media(max-width: 600px){
     .card{
         width:154px;
+        height: 122px;
 
     }
     .cardsWrapper{

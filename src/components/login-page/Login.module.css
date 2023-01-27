@@ -15,6 +15,9 @@
     left: 65%;
     transform: translate(-50%, -50%);
 }
+.form{
+    position: relative;
+}
 
 .input {
     width: 100%;
@@ -23,6 +26,8 @@
     border-radius: 75px;
     height: 43px;
     padding: 12px 20px;
+    color:  #F9F4F1;
+    letter-spacing: 1px;
 }
 
 .top {
@@ -65,6 +70,21 @@
     padding: 10px 50px;
     border-radius: 75px;
     text-transform: uppercase;
+}
+.btnLogin:disabled{
+    background-color: #f1ad5e;
+    color: #535356;
+}
+
+.errorMessage{
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 19px;
+    letter-spacing: 0.03em;
+    color: #F14B53;
+    position: absolute;
+    top:106px;
+    left: 24px;
 }
 
 @media (max-width: 1115px) {

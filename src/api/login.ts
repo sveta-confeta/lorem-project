@@ -5,7 +5,7 @@ const correctCredentials = {
 
 const getUser = async (userName: string, password: string) => {
 	if (correctCredentials.name !== userName || correctCredentials.password !== password) {
-		throw Error('Wrong user name or password')
+		throw Error('Wrong name or password. Please, try again')
 	}
 
 	return correctCredentials
@@ -17,7 +17,6 @@ export const loginUser = async (userName: string, password: string) => {
 
 		const dataNameForLocalStorage = JSON.stringify({name: user.name})
 		const dataPasswordForLocalStorage = JSON.stringify({name: user.password})
-		// const dataForLocalStorage = JSON.stringify({name: user.name, isAuthorised: true})
 		await window.localStorage.setItem('user', dataNameForLocalStorage)
 		await window.localStorage.setItem('password', dataPasswordForLocalStorage)
 

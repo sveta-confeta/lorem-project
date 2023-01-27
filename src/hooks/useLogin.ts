@@ -44,7 +44,7 @@ export const useLogin = () => {
 		} catch (e: any) {
 			setUserName('')
 			setPassword('')
-			setIsLoginError(true) //error
+			setIsLoginError(true)
 			setErrorMessage(e.message)
 		}
 	}

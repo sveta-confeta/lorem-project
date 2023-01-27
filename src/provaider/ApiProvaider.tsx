@@ -17,24 +17,40 @@ export type PhotosType = {
     download_url: string
 
 }
-type ContextType={
-    data?:PhotosType[]
+type ContextType = {
+    data?: PhotosType[]
 }
-export const APIContext = createContext<ContextType>({data:[]});
+export const APIContext = createContext<ContextType>({data: []});
 
-export const GetApiProvaider: FC<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>> =({children})=>{
+
+export const GetApiProvaider: FC<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>> = ({children}) => {
+
     const [data, setData] = useState<PhotosType[]>([]);
+    const [numPage, setNumPage] = useState(5);
+
+    const numberPage = Math.floor(Math.random() * (8 - 1 + 1)) + 1
+
+
     useEffect(() => {
-        let url = "https://picsum.photos/v2/list?page=1&limit=12";
+        return setNumPage(numberPage);
+    }, [numPage]);
+
+
+    console.log(numPage)
+
+
+    useEffect(() => {
+        let url = `https://picsum.photos/v2/list?page=${numPage}&limit=12`;
         axios.get(url)
             .then(function (response) {
                 setData(response.data);
-
-                console.log(response.data);
             })
             .catch((error) => console.log(error));
-    }, []);
-return <APIContext.Provider value={{data}}>
-    {children}
-</APIContext.Provider>
+    }, [data]);
+
+
+    return <APIContext.Provider value={{data}}>
+        {children}
+    </APIContext.Provider>
 }
+
