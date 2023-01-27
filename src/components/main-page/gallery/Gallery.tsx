@@ -5,9 +5,6 @@ import {NavLink} from "react-router-dom";
 
 export const Gallery = () => {
     const {data} = React.useContext(APIContext)
-
-
-
     return (
         <section id="gallery" className={s.gallery}>
             <h3 className={s.title}>All images</h3>
@@ -27,5 +24,5 @@ export const Gallery = () => {
 
 
     )
-        ;
+
 };
