@@ -1,15 +1,11 @@
-import React, {useCallback, useEffect, useState} from 'react';
+import  { useEffect, useState} from 'react';
 import { useNavigate } from 'react-router-dom';
 import {loginUser} from '../api/login';
 
-const correctCredentials = {
-	login: 'test',
-	password: 'test123',
-}
 
 export const useLogin = () => {
 	const [isCredentialsValid, setIsCredentialsValid] = useState(false)
-	const [errorMessage, setErrorMessage] = useState('');
+	const [errorMessage, setErrorMessage] = useState('' );
 	const [userName, setUserName] = useState('');
 	const [password, setPassword] = useState('');
 	const [isLoginError, setIsLoginError] = useState(false);
@@ -22,7 +18,7 @@ export const useLogin = () => {
 			} else if (password && password.length < 4) {
 
 				setIsCredentialsValid(false)
-				setErrorMessage('The password name must contain more than four characters')
+				setErrorMessage('The password  must contain more than four characters')
 			} else if ((userName && !password) || (!userName && password)) {
 				setIsCredentialsValid(false)
 				setErrorMessage('')
@@ -31,7 +27,7 @@ export const useLogin = () => {
 				setErrorMessage('')
 			}
 		},
-		[userName, password, isLoginError],
+		[userName, password, isLoginError]
 	);
 	const onFocus = ()=> {
 		if (isLoginError) {
@@ -48,7 +44,7 @@ export const useLogin = () => {
 		} catch (e: any) {
 			setUserName('')
 			setPassword('')
-			setIsLoginError(true)
+			setIsLoginError(true) //error
 			setErrorMessage(e.message)
 		}
 	}

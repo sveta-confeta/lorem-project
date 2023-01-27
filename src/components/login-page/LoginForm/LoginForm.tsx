@@ -1,6 +1,5 @@
-import React, { useState } from 'react';
-import {NavLink} from 'react-router-dom';
-import s from './LoginForm.module.css'
+import React  from 'react';
+import s from './../Login.module.css'
 import {useLogin} from '../../../hooks/useLogin';
 
 function LoginForm() {
@@ -15,7 +14,10 @@ function LoginForm() {
 	};
 
 	return (
+		<>
+			{}
 		<form className={s.form} onSubmit={login}>
+			<div>
 			<input
 				type="text"
 				placeholder="Enter your name"
@@ -32,9 +34,12 @@ function LoginForm() {
 				className={`${s.input} ${s.bottom}`}
 				onFocus={onFocus}
 			/>
+				{errorMessage || <div className={s.errorMessage}>{errorMessage}</div>}
+			</div>
 			<button className={s.btnLogin} type="submit" disabled={!isCredentialsValid}>Continue</button>
-			{errorMessage || <div>{errorMessage}</div>}
+
 		</form>
+		</>
 	);
 }
 

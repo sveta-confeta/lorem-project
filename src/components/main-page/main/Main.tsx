@@ -1,13 +1,23 @@
-import React from 'react';
+import React, {useEffect} from 'react';
 import s from './Main.module.css'
 import mainImgDesk from './../../../assets/mainImg-desktop.png'
+import {LoginContext} from "../../../provaider/LoginProvaider";
 import {useNavigate} from "react-router-dom";
+
 
 export const Main = () => {
     const navigate = useNavigate()
-    const onGallery = () => {
-        navigate('/')
-    }
+
+    const {userName, userPassword} = React.useContext(LoginContext)
+
+
+    useEffect(() => {
+        if (userName!== `{"name":"test123"}` && userPassword !== `{"name":"test123"}`) {
+            navigate('/login')
+
+        }
+    }, [userName, userPassword])
+
     return (
         <main className={s.main}>
             <div className={s.content}>
@@ -23,5 +33,6 @@ export const Main = () => {
 
         </main>
     );
-};
+}
+
 

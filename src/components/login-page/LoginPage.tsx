@@ -1,6 +1,6 @@
 import React from 'react';
 import s from './Login.module.css'
-import {NavLink} from "react-router-dom";
+import LoginForm from "./LoginForm/LoginForm";
 
 export const LoginPage = () => {
     return (
@@ -8,16 +8,7 @@ export const LoginPage = () => {
 
             <div className={s.formContainer}>
                 <h3 className={s.titleLog}>LOG IN</h3>
-
-                <form className={s.form}>
-                    <div>
-                        <input type="text" placeholder="Enter your name" className={`${s.input} ${s.top}`}/>
-                        <input type="password" placeholder="Enter password" className={`${s.input} ${s.bottom}`}/>
-                    </div>
-                    <NavLink to={'/'}>
-                        <button className={s.btnLogin} type="submit">Continue</button>
-                    </NavLink>
-                </form>
+                <LoginForm/>
             </div>
         </div>
     );
