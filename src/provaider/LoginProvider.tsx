@@ -10,7 +10,7 @@ type ContextType={
 }
 export const LoginContext = createContext<ContextType>({});
 
-export const LoginProvaider: FC<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>> =({children})=> {
+export const LoginProvider: FC<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>> =({children})=> {
 
     let userName = localStorage.getItem('user')
     let userPassword = localStorage.getItem('password')

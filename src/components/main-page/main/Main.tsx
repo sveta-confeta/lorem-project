@@ -1,7 +1,7 @@
 import React, {useEffect} from 'react';
 import s from './Main.module.css'
 import mainImgDesk from './../../../assets/mainImg-desktop.png'
-import {LoginContext} from "../../../provaider/LoginProvaider";
+import {LoginContext} from "../../../provaider/LoginProvider";
 import {useNavigate} from "react-router-dom";
 
 

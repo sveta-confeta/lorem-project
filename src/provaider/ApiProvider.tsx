@@ -3,7 +3,7 @@ import {
     DetailedHTMLProps,
     FC, HTMLAttributes,
 
-    useEffect,
+    useEffect, useMemo,
     useState
 } from "react";
 import axios from "axios";
@@ -23,18 +23,10 @@ type ContextType = {
 export const APIContext = createContext<ContextType>({data: []});
 
 
-export const GetApiProvaider: FC<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>> = ({children}) => {
+export const GetApiProvider: FC<DetailedHTMLProps<HTMLAttributes<HTMLDivElement>, HTMLDivElement>> = ({children}) => {
 
     const [data, setData] = useState<PhotosType[]>([]);
-    const [numPage, setNumPage] = useState(5);
-
-    const numberPage = Math.floor(Math.random() * (8 - 1 + 1)) + 1
-
-
-    useEffect(() => {
-        return setNumPage(numberPage);
-    }, [numPage]);
-
+    const numPage=useMemo(()=>Math.floor(Math.random() * (8 - 1 + 1)) + 1,[])
 
     console.log(numPage)
 
@@ -46,8 +38,9 @@ export const GetApiProvaider: FC<DetailedHTMLProps<HTMLAttributes<HTMLDivElement
                 setData(response.data);
             })
             .catch((error) => console.log(error));
-    }, [data]);
+    }, []);
 
+    console.log(data)
 
     return <APIContext.Provider value={{data}}>
         {children}

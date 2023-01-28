@@ -1,5 +1,5 @@
 import React from 'react';
-import {APIContext} from "../../../provaider/ApiProvaider";
+import {APIContext} from "../../../provaider/ApiProvider";
 import s from './Gallery.module.css'
 import {NavLink} from "react-router-dom";
 

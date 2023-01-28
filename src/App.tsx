@@ -4,18 +4,18 @@ import './App.css';
 import {MainPage} from "./components/main-page/MainPage";
 import {Header} from "./components/header/Header";
 import {Footer} from "./components/footer/Footer";
-import {LoginProvaider} from "./provaider/LoginProvaider";
+import {LoginProvider} from "./provaider/LoginProvider";
 
 
 export function App() {
     return (
-        <LoginProvaider>
+        <LoginProvider>
             <div className="App">
                 <Header/>
                 <MainPage/>
                 <Footer/>
             </div>
-        </LoginProvaider>
+        </LoginProvider>
     );
 }
 

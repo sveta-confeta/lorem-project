@@ -3,7 +3,7 @@ import {Header} from "../../../header/Header";
 import {Footer} from "../../../footer/Footer";
 import s from './Card.module.css'
 import {useParams} from "react-router-dom";
-import {PhotosType} from "../../../../provaider/ApiProvaider";
+import {PhotosType} from "../../../../provaider/ApiProvider";
 import axios from "axios";
 
 
