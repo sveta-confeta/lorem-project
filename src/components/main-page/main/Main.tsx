@@ -5,6 +5,7 @@ import {LoginContext} from "../../../provaider/LoginProvider";
 import {useNavigate} from "react-router-dom";
 
 
+
 export const Main = () => {
     const navigate = useNavigate()
 
@@ -12,7 +13,7 @@ export const Main = () => {
 
 
     useEffect(() => {
-        if (userName!== `{"name":"test123"}` && userPassword !== `{"name":"test123"}`) {
+        if (userName!== "test" && userPassword !== `{"name":"test123"}`) {
             navigate('/login')
 
         }

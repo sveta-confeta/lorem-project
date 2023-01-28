@@ -109,6 +109,10 @@
     .login{
         padding-top: 141px;
     }
+    .errorMessage{
+        top:113px;
+        text-align: center;
+    }
 
     .formContainer {
         left: 50%;

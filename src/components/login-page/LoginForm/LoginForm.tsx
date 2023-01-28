@@ -1,6 +1,8 @@
-import React  from 'react';
+import React from 'react';
 import s from './../Login.module.css'
 import {useLogin} from '../../../hooks/useLogin';
+
+
 
 function LoginForm() {
 	const {userName, setUserName, password, setPassword , isCredentialsValid, errorMessage, login, onFocus} = useLogin()
@@ -13,9 +15,8 @@ function LoginForm() {
 		setPassword(e.target.value);
 	};
 
+
 	return (
-		<>
-			{}
 		<form className={s.form} onSubmit={login}>
 			<div>
 			<input
@@ -39,7 +40,6 @@ function LoginForm() {
 			<button className={s.btnLogin} type="submit" disabled={!isCredentialsValid}>Continue</button>
 
 		</form>
-		</>
 	);
 }
 

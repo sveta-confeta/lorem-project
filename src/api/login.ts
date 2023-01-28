@@ -15,7 +15,7 @@ export const loginUser = async (userName: string, password: string) => {
 	try {
 		const user = await getUser(userName, password)
 
-		const dataNameForLocalStorage = JSON.stringify({name: user.name})
+		const dataNameForLocalStorage = JSON.stringify(userName)
 		const dataPasswordForLocalStorage = JSON.stringify({name: user.password})
 		await window.localStorage.setItem('user', dataNameForLocalStorage)
 		await window.localStorage.setItem('password', dataPasswordForLocalStorage)
