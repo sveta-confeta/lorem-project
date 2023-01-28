@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/lorem-project/static/css/main.5de37bff.css",
-    "main.js": "/lorem-project/static/js/main.06562aad.js",
+    "main.css": "/lorem-project/static/css/main.c1bdbda6.css",
+    "main.js": "/lorem-project/static/js/main.3d37f660.js",
     "static/js/787.65974f1a.chunk.js": "/lorem-project/static/js/787.65974f1a.chunk.js",
     "static/media/backgroundLog.jpg": "/lorem-project/static/media/backgroundLog.a4811c62129cd81306f1.jpg",
     "static/media/CATLinz.woff": "/lorem-project/static/media/CATLinz.a7368c917c9dfe061d47.woff",
@@ -10,12 +10,12 @@
     "static/media/Mastercard_Logo.svg": "/lorem-project/static/media/Mastercard_Logo.71a16d80b9c206691251d294f7d8a2d2.svg",
     "static/media/Visa_Logo.svg": "/lorem-project/static/media/Visa_Logo.c091da32b82de0a02d7e581e92a4e2c0.svg",
     "index.html": "/lorem-project/index.html",
-    "main.5de37bff.css.map": "/lorem-project/static/css/main.5de37bff.css.map",
-    "main.06562aad.js.map": "/lorem-project/static/js/main.06562aad.js.map",
+    "main.c1bdbda6.css.map": "/lorem-project/static/css/main.c1bdbda6.css.map",
+    "main.3d37f660.js.map": "/lorem-project/static/js/main.3d37f660.js.map",
     "787.65974f1a.chunk.js.map": "/lorem-project/static/js/787.65974f1a.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5de37bff.css",
-    "static/js/main.06562aad.js"
+    "static/css/main.c1bdbda6.css",
+    "static/js/main.3d37f660.js"
   ]
 }
