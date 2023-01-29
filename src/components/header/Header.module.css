@@ -5,6 +5,7 @@
     height: 91px;
     box-shadow:70px 70px 90px  rgba(22, 22, 22, 1) inset;
     width: 100%;
+    z-index: 10;
 
 }
 

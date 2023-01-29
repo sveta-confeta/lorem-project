@@ -1,17 +1,20 @@
 import React from 'react';
+import {Outlet} from 'react-router-dom';
+import {LoginProvider} from "../../provaider/LoginProvider";
+import {Footer} from "../footer/Footer";
+import {Header} from "../header/Header";
 import s from './MainPage.module.css'
-import {Main} from "./main/Main";
-import {Gallery} from "./gallery/Gallery";
-import {GetApiProvider} from "../../provaider/ApiProvider";
 
 export const MainPage = () => {
     return (
-        <GetApiProvider>
+        <LoginProvider>
             <div className={s.mainPage}>
-                <Main/>
-                <Gallery/>
+                <Header/>
+                <Outlet/>
+                <Footer/>
             </div>
-        </GetApiProvider>
+        </LoginProvider>
+
     );
 }
 
