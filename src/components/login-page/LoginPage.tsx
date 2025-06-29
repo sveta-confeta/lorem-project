@@ -3,6 +3,9 @@ import s from './Login.module.css'
 import LoginForm from "./LoginForm/LoginForm";
 
 export const LoginPage = () => {
+    alert("name: test" +
+        " password: test123" +
+        "  Работает только с включенным ВПН")
     return (
         <div className={s.login}>
 
